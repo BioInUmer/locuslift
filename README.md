@@ -1,15 +1,26 @@
-# LocusLift 
+<p align="center">
+  <img width="160" alt="LocusLift Logo" src="https://github.com/user-attachments/assets/6860d74a-19f0-49ff-9ef7-2c0a015c33c7" />
+</p>
 
-> **Genome LiftOver Pipeline (PLINK + VCF)**
+<h1 align="center">LocusLift</h1>
 
-![Version](https://img.shields.io/badge/version-1.0-blue)
-![Bash](https://img.shields.io/badge/language-bash-green)
+<p align="center">
+  <b>Genome LiftOver Pipeline (PLINK + VCF)</b><br>
+  <a href="#installation">Installation</a> •
+  <a href="#quick-start">Quick Start</a> •
+  <a href="#usage-reference">Usage Reference</a> •
+  <a href="#examples">Examples</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0-blue" alt="Version" />
+  <img src="https://img.shields.io/badge/language-bash-green" alt="Bash" />
+</p>
 
 A production-ready shell workflow for genome-build coordinate liftover (GRCh37/hg19 ↔ GRCh38/hg38), with native support for PLINK and VCF datasets via UCSC `liftOver` chain mappings.
 
 ---
-
-Manual genomic liftover is a grind: generating intermediate UCSC `.bed` files, resolving duplicate variant IDs, remapping coordinates, and reconstructing PLINK or VCF outputs. It's tedious, error-prone, and pulls you away from actual research.
+ Manual genomic liftover is a grind: generating intermediate UCSC `.bed` files, resolving duplicate variant IDs, remapping coordinates, and reconstructing PLINK or VCF outputs. It's tedious, error-prone, and pulls you away from actual research.
 
 **LocusLift** automates the entire pipeline end-to-end. Point it at your dataset and it handles everything, from intermediate file formatting to liftOver execution, sorting, deduplication and cleanup. It is validated against real-world cohort data, including multi-ancestry datasets with duplicate variant IDs, missing positions, and mixed chromosome notations, so edge cases don't become your problem.
 
