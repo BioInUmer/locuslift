@@ -15,9 +15,9 @@
 <p align="center">
   <img src="https://img.shields.io/badge/version-1.0-blue" alt="Version" />
   <img src="https://img.shields.io/badge/language-bash-green" alt="Bash" />
-</p>
 
 A production-ready shell workflow for genome-build coordinate liftover (GRCh37/hg19 ↔ GRCh38/hg38), with native support for PLINK and VCF datasets via UCSC `liftOver` chain mappings.
+</p>
 
 ---
  Manual genomic liftover is a grind: generating intermediate UCSC `.bed` files, resolving duplicate variant IDs, remapping coordinates, and reconstructing PLINK or VCF outputs. It's tedious, error-prone, and pulls you away from actual research.
