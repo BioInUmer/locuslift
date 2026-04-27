@@ -116,7 +116,7 @@ git clone https://github.com/yourusername/LocusLift.git
 cd LocusLift
 ```
 
-*Note: The `chains/` directory contains `hg38ToHg19` and `hg19ToHg38` chain files. The `sample-1kg/` directory contains a subset of 1000 Genomes Project data in PLINK and VCF formats.*
+*Note: The `chains/` directory contains `hg38ToHg19` and `hg19ToHg38` chain files. The `sample-1kg/` directory contains a subset of 1000 Genomes Project data in PLINK and VCF formats [1].*
 
 ### 2. Download UCSC `liftOver` Binary
 Pick the correct binary for your OS and architecture.
@@ -381,11 +381,12 @@ For academic and clinical settings:
 
 ## References
 
-1. UCSC BED format FAQ (0-based `chromStart`, half-open interval semantics): [UCSC FAQ](https://genome.ucsc.edu/FAQ/FAQformat.html)
-2. VCF specification (POS is 1-based, fixed fields): [HTS Specs](https://samtools.github.io/hts-specs/VCFv4.3.pdf)
-3. UCSC command-line liftOver usage and caveats: [UCSC FAQ Downloads](https://genome.ucsc.edu/FAQ/FAQdownloads)
-4. bcftools manual (VCF/BCF support, query/view/sort/index): [bcftools](https://samtools.github.io/bcftools/bcftools.html)
-5. Picard/GATK LiftoverVcf documentation (allele-aware VCF liftover behavior): [Broad Institute](https://gatk.broadinstitute.org/hc/en-us/articles/360036363632-LiftoverVcf-Picard)
+[1] Monti, R. (2023). HapMap3-1KG: 1000 Genomes processed genotypes in PLINK (.bed/bim/fam) format. figshare. https://doi.org/10.6084/m9.figshare.20802700.v1
+[2] UCSC BED format FAQ (0-based `chromStart`, half-open interval semantics): [UCSC FAQ](https://genome.ucsc.edu/FAQ/FAQformat.html)
+[3] VCF specification (POS is 1-based, fixed fields): [HTS Specs](https://samtools.github.io/hts-specs/VCFv4.3.pdf)
+[4] UCSC command-line liftOver usage and caveats: [UCSC FAQ Downloads](https://genome.ucsc.edu/FAQ/FAQdownloads)
+[5] bcftools manual (VCF/BCF support, query/view/sort/index): [bcftools](https://samtools.github.io/bcftools/bcftools.html)
+[6] Picard/GATK LiftoverVcf documentation (allele-aware VCF liftover behavior): [Broad Institute](https://gatk.broadinstitute.org/hc/en-us/articles/360036363632-LiftoverVcf-Picard)
 
 ---
 *Last updated: 2026-04-26*
