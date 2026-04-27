@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="160" alt="LocusLift Logo" src="https://github.com/user-attachments/assets/6860d74a-19f0-49ff-9ef7-2c0a015c33c7" />
+  <img width="160" alt="Image" src="https://github.com/user-attachments/assets/c04dc300-5124-47ca-a463-5e2d8ee65b40" />
 </p>
 
 <h1 align="center">LocusLift</h1>
