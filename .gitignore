@@ -1,0 +1,11 @@
+# Mac system files
+.DS_Store
+
+# Ignore images directory as requested
+images/
+
+# Optional: Ignore large chain files if you don't want them in the repo
+# chains/
+
+# Optional: Ignore sample data
+# sample-1kg/
