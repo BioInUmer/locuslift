@@ -11,7 +11,7 @@ A production-ready shell workflow for genome-build coordinate liftover (GRCh37/h
 
 Manual genomic liftover is a grind: generating intermediate UCSC `.bed` files, resolving duplicate variant IDs, remapping coordinates, and reconstructing PLINK or VCF outputs. It's tedious, error-prone, and pulls you away from actual research.
 
-**LocusLift** automates the entire pipeline end-to-end. Point it at your dataset and it handles everything—intermediate file formatting, liftOver execution, sorting, deduplication, and cleanup. Validated against real-world cohort data—including multi-ancestry datasets with duplicate variant IDs, missing positions, and mixed chromosome notations—so edge cases don't become your problem.
+**LocusLift** automates the entire pipeline end-to-end. Point it at your dataset and it handles everything, from intermediate file formatting to liftOver execution, sorting, deduplication and cleanup. It is validated against real-world cohort data, including multi-ancestry datasets with duplicate variant IDs, missing positions, and mixed chromosome notations, so edge cases don't become your problem.
 
 ---
 
