@@ -382,10 +382,15 @@ For academic and clinical settings:
 ## References
 
 [1] Monti, R. (2023). HapMap3-1KG: 1000 Genomes processed genotypes in PLINK (.bed/bim/fam) format. figshare. https://doi.org/10.6084/m9.figshare.20802700.v1
+
 [2] UCSC BED format FAQ (0-based `chromStart`, half-open interval semantics): [UCSC FAQ](https://genome.ucsc.edu/FAQ/FAQformat.html)
+
 [3] VCF specification (POS is 1-based, fixed fields): [HTS Specs](https://samtools.github.io/hts-specs/VCFv4.3.pdf)
+
 [4] UCSC command-line liftOver usage and caveats: [UCSC FAQ Downloads](https://genome.ucsc.edu/FAQ/FAQdownloads)
+
 [5] bcftools manual (VCF/BCF support, query/view/sort/index): [bcftools](https://samtools.github.io/bcftools/bcftools.html)
+
 [6] Picard/GATK LiftoverVcf documentation (allele-aware VCF liftover behavior): [Broad Institute](https://gatk.broadinstitute.org/hc/en-us/articles/360036363632-LiftoverVcf-Picard)
 
 ---
