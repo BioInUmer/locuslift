@@ -154,7 +154,7 @@ Run the script without arguments to see the help menu:
 ```bash
 ./LocusLift.sh -h
 ```
-![LocusLift CLI Menu](./images/LocusLift.png)  
+<img width="803" height="738" alt="Image" src="https://github.com/user-attachments/assets/575a8f7e-a284-4613-8c86-98e91aa2a7fc" />  
 
 ---
 
@@ -367,15 +367,15 @@ For academic and clinical settings:
 
 <!-- screenshot: Build Detection Failure -->
 ### Build Detection Failure
-![LocusLift Build Detection Failure](./images/LocusLift-Build-fail.png)
+<img width="827" height="406" alt="Image" src="https://github.com/user-attachments/assets/b082cb25-1310-4f5f-8187-1c55420a950c" />
 
 <!-- screenshot: Successful Vcf Run -->
 ### Successful Vcf Run
-![LocusLift Vcf](./images/LocusLift-success.png)
+<img width="826" height="468" alt="Image" src="https://github.com/user-attachments/assets/abfc9de9-42f6-485f-9c5f-25880b4dae56" />
 
 <!-- screenshot: LocusLift log file -->
 ### LocusLift Log File
-![LocusLift Log File](./images/LocusLift-log.png)
+<img width="882" height="636" alt="Image" src="https://github.com/user-attachments/assets/2c47696c-ebdf-4c5f-bc8a-447d722315ea" />
 
 ---
 
