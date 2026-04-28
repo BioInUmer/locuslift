@@ -99,7 +99,7 @@ LocusLift/
     └── hg38ToHg19.over.chain.gz
 ```
 
-> A subset of the 1000 Genomes dataset [[1](#references)] is available in `sample-1kg.zip`, included in [GitHub Releases](https://github.com/bioinumer/LocusLift/releases) for testing purposes.
+> A subset of the 1000 Genomes dataset  is available in `sample-1kg.zip`, included in [GitHub Releases](https://github.com/bioinumer/LocusLift/releases) for testing purposes.
 
 ---
 
@@ -149,7 +149,7 @@ Alternatively, keep it in the LocusLift directory — the script will find it au
 
 ### 5. Download the sample dataset (optional)
 
-A subset of 1000 Genomes Project data (chromosome 16) is available in PLINK 1.9, PLINK 2.0, and VCF formats.
+A subset of 1000 Genomes Project data [[1](#references)] is available in PLINK 1.9, PLINK 2.0, and VCF formats.
 
 ```bash
 curl -L -O https://github.com/bioinumer/LocusLift/releases/download/v1.0/sample-1kg.zip
@@ -186,7 +186,7 @@ The script parses the input file (VCF headers or variant coordinates) to infer w
 
 ### Step 2: Coordinate extraction
 
-Variants are converted to UCSC BED format (0-based start, 1-based end). In PLINK mode, variants on non-primary contigs are dropped by default (override with `--keep-all-chr`) and duplicate IDs are removed automatically.
+Variants are converted to UCSC BED format (0-based start, 1-based end). Variants on non-primary contigs (i.e., NOT chr 1-22,X,Y) are dropped by default (override with `--keep-all-chr`) and duplicate IDs are removed automatically.
 
 ### Step 3: UCSC liftOver
 
