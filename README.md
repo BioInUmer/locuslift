@@ -99,7 +99,7 @@ LocusLift/
     └── hg38ToHg19.over.chain.gz
 ```
 
-> The `sample-1kg/` test dataset is excluded from the repository to keep the size small. Download it separately from [GitHub Releases](https://github.com/bioinumer/LocusLift/releases).
+> A subset of the 1000 Genomes dataset [[1](#references)] is available in `sample-1kg.zip`, included in [GitHub Releases](https://github.com/bioinumer/LocusLift/releases) for testing purposes.
 
 ---
 
