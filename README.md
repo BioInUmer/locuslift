@@ -119,54 +119,84 @@ The pipeline requires a few standard bioinformatics tools depending on the mode 
 
 ## Installation
 
-### 1. Clone the Repository
-The easiest way to get started is to clone the repository. This includes the main script, pre-downloaded UCSC chain files, and sample datasets to test the pipeline.
+### 1 — Get the Repository
+
+Choose the method that fits your needs:
+
+**Option A: Lightweight Install (Recommended)**
+
+Downloads only the core script, documentation, and `chains/` directory for the fastest way to get started if you don't need sample datasets.
+
+```bash
+mkdir LocusLift && cd LocusLift
+git init
+git remote add origin https://github.com/bioinumer/LocusLift.git
+git sparse-checkout init --cone
+git sparse-checkout set LocusLift.sh README.md chains/
+git pull origin main
+```
+
+**Option B: Full Install**
+
+Clones the entire repository, including `sample-1kg/`. Note that the genomic data in that directory makes this significantly larger and slower to download.
 
 ```bash
 git clone https://github.com/bioinumer/LocusLift.git
 cd LocusLift
 ```
 
-*Note: The `chains/` directory contains `hg38ToHg19` and `hg19ToHg38` chain files. The `sample-1kg/` directory contains a subset of 1000 Genomes Project data in PLINK and VCF formats [1].*
+---
 
-### 2. Download UCSC `liftOver` Binary
-Pick the correct binary for your OS and architecture.
+### 2 — Download the UCSC `liftOver` Binary
 
-| OS / Architecture | Download URL |
+Select the binary for your OS and architecture:
+
+| OS / Architecture | Download |
 | :--- | :--- |
-| **Linux x86_64** | [Download](https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/liftOver) |
-| **Linux ARM64** | [Download](https://hgdownload.soe.ucsc.edu/admin/exe/linux.aarch64.v492/liftOver) |
-| **macOS Apple Silicon** | [Download](https://hgdownload.soe.ucsc.edu/admin/exe/macOSX.arm64/liftOver) |
-| **macOS Intel** | [Download](https://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/liftOver) |
+| Linux x86\_64 | [Download](https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/liftOver) |
+| Linux ARM64 | [Download](https://hgdownload.soe.ucsc.edu/admin/exe/linux.aarch64.v492/liftOver) |
+| macOS Apple Silicon | [Download](https://hgdownload.soe.ucsc.edu/admin/exe/macOSX.arm64/liftOver) |
+| macOS Intel | [Download](https://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/liftOver) |
 
-*Not sure what architecture you have? Run:*
+Not sure which architecture you have? Run:
+
 ```bash
-uname -s
-uname -m
+uname -s && uname -m
 ```
 
-### 3. Install Mode Dependencies
-- **plink2**: Download from [cog-genomics](https://www.cog-genomics.org/plink/2.0/)
-- **bcftools**: You can download it using a package manager (e.g., `brew install bcftools`) or from [htslib](https://www.htslib.org/download/)
-  
-### 4. Moving Binaries to PATH
-For the script to find the tools automatically, move them to your system `PATH`.
+---
+
+### 3 — Install Dependencies
+
+| Tool | Install |
+| :--- | :--- |
+| **plink2** | Download from [cog-genomics.org](https://www.cog-genomics.org/plink/2.0/) |
+| **bcftools** | `brew install bcftools` or build from [htslib.org](https://www.htslib.org/download/) |
+
+---
+
+### 4 — Add Binaries to PATH
+
+Move tools to a directory on your system `PATH` so the script can find them automatically:
 
 ```bash
-# Example for moving liftOver to /usr/local/bin
 chmod +x liftOver
 sudo mv liftOver /usr/local/bin/
-
-# Alternatively, keep it in the script directory and the script will find it.
 ```
 
-### 5. Verifying Installation
-Run the script without arguments to see the help menu:
+> **Tip:** If you'd rather not move the binary, you can keep `liftOver` in the same directory as `LocusLift.sh` and the script will find it automatically.
+
+---
+
+### 5 — Verify the Installation
+
+Run the script with the `-h` flag to confirm everything is working:
+
 ```bash
 ./LocusLift.sh -h
 ```
-<img width="803" height="738" alt="Image" src="https://github.com/user-attachments/assets/575a8f7e-a284-4613-8c86-98e91aa2a7fc" />  
 
+<img width="803" height="738" alt="LocusLift help menu" src="https://github.com/user-attachments/assets/575a8f7e-a284-4613-8c86-98e91aa2a7fc" />
 ---
 
 ## Quick Start
