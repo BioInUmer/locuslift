@@ -123,7 +123,7 @@ The pipeline requires a few standard bioinformatics tools depending on the mode 
 The easiest way to get started is to clone the repository. This includes the main script, pre-downloaded UCSC chain files, and sample datasets to test the pipeline.
 
 ```bash
-git clone https://github.com/yourusername/LocusLift.git
+git clone https://github.com/bioinumer/LocusLift.git
 cd LocusLift
 ```
 
