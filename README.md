@@ -322,7 +322,7 @@ output_prefix/
 
 ## Edge Cases & Caveats
 
-**VCF liftover is coordinate-only.** REF/ALT alleles are not reverse-complemented if the strand flips, and the output is not validated against a target reference FASTA. For allele-aware VCF liftover, use Picard `LiftoverVcf` instead.
+**VCF liftover is coordinate-only.** REF/ALT alleles are not reverse-complemented if the strand flips, and the output is not validated against a target reference FASTA. For allele-aware VCF liftover, use Picard `LiftoverVcf` instead [[6](#references)].
 
 **Chromosome 16 datasets.** The size difference between GRCh37 and GRCh38 for chr16 is too small to resolve build inference confidently. The script will warn you and prompt before continuing.
 
@@ -370,8 +370,6 @@ Ensure you are using a standard, modern `awk` (GNU awk or macOS default). Some m
 
 ## Reproducibility Recommendations
 
-For academic or clinical use:
-
 1. Record exact versions of `liftOver`, `plink2`, and `bcftools` alongside your results.
 2. Archive the `LocusLift.log` file with your final datasets.
 3. For VCFs, validate REF/ALT consistency against the target reference FASTA by computing allele frequencies and checking for strand flips.
@@ -408,6 +406,3 @@ For academic or clinical use:
 
 [6] Picard LiftoverVcf (allele-aware VCF liftover): https://gatk.broadinstitute.org/hc/en-us/articles/360036363632-LiftoverVcf-Picard
 
----
-
-*Last updated: 2026-04-28*
