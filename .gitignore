@@ -1,0 +1,9 @@
+# Mac system files
+.DS_Store
+
+# Ignore images directory
+images/
+
+# Ignore sample data (hosted in v1.0 Release)
+sample-1kg/
+sample-1kg.zip
