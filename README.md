@@ -280,7 +280,19 @@ Lifts a compressed VCF and generates a `.csi` index automatically:
 </details>
 
 <details>
-<summary><b>5. Bypassing safety checks (use with caution)</b></summary>
+<summary><b>5. Custom PLINK variant ID template</b></summary>
+
+Changes the PLINK output variant IDs with `-v`. Quote the template so the shell does not expand `$r` and `$a`.
+
+```bash
+./LocusLift.sh \
+  -i data_hg19 -c hg19ToHg38.over.chain.gz -o data_hg38 \
+  -v 'chr@:#:$r:$a'
+```
+</details>
+
+<details>
+<summary><b>6. Bypassing safety checks (use with caution)</b></summary>
 
 Forces execution despite a detected build mismatch. Only use when you are certain the detection is wrong.
 
@@ -405,4 +417,3 @@ Ensure you are using a standard, modern `awk` (GNU awk or macOS default). Some m
 [5] bcftools manual: https://samtools.github.io/bcftools/bcftools.html
 
 [6] Picard LiftoverVcf (allele-aware VCF liftover): https://gatk.broadinstitute.org/hc/en-us/articles/360036363632-LiftoverVcf-Picard
-

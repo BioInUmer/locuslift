@@ -229,6 +229,7 @@ usage() {
     cat <<USAGE
 
 ${BOLD}LocusLift${RESET} ${DIM}v${VERSION}${RESET} ${DIM}- Genome LiftOver Pipeline (PLINK + VCF)${RESET}
+${DIM}GitHub: https://github.com/BioInUmer/LocusLift${RESET}
 ${DIM}${RULE_LINE}${RESET}
 ${BOLD}Usage${RESET}
   PLINK  ./${SCRIPT_NAME} -i <prefix> -c <chain> -o <out_prefix> [opts]
